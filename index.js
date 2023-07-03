@@ -102,17 +102,106 @@
 
 
 //-----Combining & Slicing Arrays
-let first = [1,2,3];
-let second = [4,5,6];
+// let first = [1,2,3];
+// let second = [4,5,6];
 
-let combined = first.concat(second);
-console.log(combined);
+// let combined = first.concat(second);
+// console.log(combined);
 
 
-let marks = [10,20,30,40,50,60,70]
-let sliced = marks.slice()
-// let sliced = marks.slice(2)
-// let sliced = marks.slice(2,6);
-console.log(sliced);
+// let marks = [10,20,30,40,50,60,70]
+// let sliced = marks.slice()
+// // let sliced = marks.slice(2)
+// // let sliced = marks.slice(2,6);
+// console.log(sliced);
+
+// spread  operator
+//  let first = [1,2,3];
+//  let second = [4,5,6];
+
+//  let combined = [...first,'a',false,...second];
+//  console.log(combined);
+
+//  //copy
+//  let another =[...combined];
+
+
+//  iterating an Array
+//  let arr = [10,20,30,40];
+
+//  for(let value of arr) {
+//     console.log(value);
+//  }
+
+//  arr.forEach(function(number){
+//     console.log(number);
+//  })
+
+// arr.forEach(number=> console.log(number));
+
+// // joining array
+
+// let numbers = [10,20,30,40,50];
+// const joined = numbers.join(',');
+
+// console.log(joined);
+
+// split array
+
+// let message = 'This is first message';
+// let parts = message.split(' ');
+
+// console.log(parts);
+
+// let joined = parts.join('_');
+//  console.log(joined);
+
+// // sorting array
+// let number = [40,10,30,20,50];
+
+//  number.sort();
+
+//  console.log(number);
+
+//  number.reverse();
+//  console.log(number);
+
+// filtering array
+
+
+// let numbers = [1,2,-1,-4];
+//  let filtered = numbers.filter(function (value) {
+//     return value >=0;
+    
+//  });
+// let filtered = numbers.filter( value =>  value >=0);
+    
+// console.log(filtered);
+
+// Mapping
+
+// let numbers = [7,8,9,10];
+
+
+// let items = numbers.map(function(value){
+//     return 'student_no' + value;
+// // });
+//  let items = numbers.map(value=> 'student_no' + value);
+
+
+// console.log(items);
+
+//Mapping with objects;
+let numbers = [1,2,-6,-9];
+let filtered = numbers.filter(value => value >= 0);
+
+let items = filtered.map(function(num){
+    let obj = {value:num};
+    return obj;
+})
+console.log(items);
+ 
+
+
 
 
